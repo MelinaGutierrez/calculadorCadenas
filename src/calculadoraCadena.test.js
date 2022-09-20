@@ -8,4 +8,8 @@ describe("Calculadora de cadenas", () => {
     const result= calcularCadena("2")
     expect(result).toEqual(2);
   });
+  it("Si recibe una cadena con valor 2,3 deberia retornar 5", () => {
+    const result= calcularCadena("2,3")
+    expect(result).toEqual(5);
+  });
 });
