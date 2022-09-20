@@ -1,17 +1,14 @@
 function calcularCadena(cadena) {
   let numeros=cadena.split(",")
-  let respuesta
+  let respuesta=0
   if(cadena=="")
   {
-    respuesta=0;
+    return 0;
   }
   else{
-    if(numeros.length==1){
-      respuesta=parseInt(numeros);
-    }
-    if(numeros.length>1){
-      respuesta=parseInt(numeros[0])+parseInt(numeros[1]);
-    }
+    for(var i = 0;i < numeros.length; i++){
+      respuesta=respuesta+parseInt(numeros[i]);
+    }   
   }
   return respuesta;
 }
