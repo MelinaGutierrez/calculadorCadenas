@@ -16,4 +16,8 @@ describe("Calculadora de cadenas", () => {
     const result= calcularCadena("7,8")
     expect(result).toEqual(15);
   });
+  it("Si recibe una cadena con valor 2,3,4 deberia retornar 9", () => {
+    const result= calcularCadena("2,3,4")
+    expect(result).toEqual(9);
+  });
 });
